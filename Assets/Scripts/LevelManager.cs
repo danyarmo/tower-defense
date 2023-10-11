@@ -5,13 +5,13 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject tile;
+    private GameObject[] tilePrefabs;
 
     public float TileSize
     {
         get
         {
-            return tile.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+            return tilePrefabs[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x;
         }
     }
     // Start is called before the first frame update
@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
 
     private void PlaceTile(int x, int y, Vector3 worldStart)
     {
-        GameObject newTile = Instantiate(tile);
+        GameObject newTile = Instantiate(tilePrefabs[0]);
         newTile.transform.position = new Vector3(worldStart.x + (TileSize * x), worldStart.y - (TileSize * y), 0);
     }
 }
