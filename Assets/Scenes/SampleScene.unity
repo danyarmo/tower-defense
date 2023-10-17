@@ -221,6 +221,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraSpeed: 5
+--- !u!1 &1240428231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240428232}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240428232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240428231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.4044762, y: 1.0191447, z: -0.042333294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497132002
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +289,7 @@ MonoBehaviour:
   - {fileID: 8205333795212406181, guid: 85de2f2e032a7534e84aeca75cc74237, type: 3}
   - {fileID: 3140362471621270944, guid: 08e8f17d5692f6240a7ec992194f71b2, type: 3}
   cameraMovement: {fileID: 519420033}
+  map: {fileID: 1240428232}
   bluePortalPrefab: {fileID: 5683801087870774736, guid: ab9e15472c368fb4a97695143f838384, type: 3}
   redPortalPrefab: {fileID: 169637169593723213, guid: 3395339a0fe5d9445894a3224f9cdf00, type: 3}
 --- !u!4 &1497132004
